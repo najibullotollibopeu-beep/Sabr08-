@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>English Boost — учи английский</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>English Boost</h1>
+      <p>Мини-курс английского + интерактивный тест</p>
+    </header>
+
+    <section class="card" aria-labelledby="lesson-title">
+      <h2 id="lesson-title">Быстрый урок</h2>
+      <div class="lesson-grid">
+        <article>
+          <h3>Приветствия</h3>
+          <ul>
+            <li><b>Hello</b> — Привет</li>
+            <li><b>Good morning</b> — Доброе утро</li>
+            <li><b>How are you?</b> — Как дела?</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Базовые фразы</h3>
+          <ul>
+            <li><b>My name is...</b> — Меня зовут...</li>
+            <li><b>I like learning English</b> — Мне нравится учить английский</li>
+            <li><b>See you later</b> — Увидимся позже</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="quiz-title">
+      <h2 id="quiz-title">Тест</h2>
+      <form id="quiz-form"></form>
+      <div class="actions">
+        <button id="submit-btn" type="button">Проверить результат</button>
+        <button id="reset-btn" type="button" class="secondary">Пройти снова</button>
+      </div>
+      <p id="result" class="result" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
